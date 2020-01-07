@@ -1,0 +1,51 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgba(47, 79, 79, 0.904);
+    height: 120px;
+    border: solid rgba(0, 0, 0, 0.795) 5px;
+}
+
+.footer-vänster {
+    font-size: 40px;
+    display: flex;
+    flex-flow: column;
+    padding-left: 20px;
+}
+.css {
+    padding-bottom: 10px;
+    color: rgb(67, 67, 255);
+}
+.html {
+    color: coral;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.footer-mitten{
+    font-size: 60px;
+    display: flex;
+}
+.facebook {
+    padding: 25px;
+    color: lightskyblue;
+
+}
+.instagram {
+    padding: 25px;
+    color: lightskyblue;
+
+}
+.twitter {
+    padding: 25px;
+    color: lightskyblue;
+}
+
+.footer-höger{
+    font-size: 80px;
+    display: flex;
+    padding: 20px;
+}
+.contact {
+    color: white;
+}

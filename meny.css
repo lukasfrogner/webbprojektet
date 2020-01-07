@@ -1,0 +1,84 @@
+body {
+    background-image: url('bilder/back.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+  }
+a {
+    text-decoration: none;
+    color: black;
+}
+h2 {
+    border:  3px solid black;
+    padding: 5px;
+    background: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2:hover {
+    color: blue;
+}
+.desktop-meny {
+    display: flex;
+    flex-direction: row;
+    background-color: darkslategrey;
+    height: 100px;
+    margin: 15px;
+    overflow: hidden;
+    border: 5px solid black;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0.5;
+}
+
+.meny-items{
+    font-size: 30px;
+}
+.mobile-meny{
+    display: none;
+}
+@media screen and (max-width: 767.98px) {
+    
+    .desktop-meny{
+    display: none;
+    }
+    .mobile-meny{
+        display: contents;
+        font-size: 1rem;
+        width: 100%;
+    }
+    .mobile-meny button{
+        color: white;
+        background-color: darkslategrey;
+        opacity: 0.5;
+        font-size: 2rem;
+        justify-content: start;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        padding: 10px;
+        border: solid black 5px;
+    }
+    nav.menu{
+        display: none;
+    }
+    .button + nav.menu:active,
+    button:focus + nav.menu{
+        display: contents;
+    }
+    nav.menu ul{
+        padding: 5px;
+        list-style: none;
+        border-bottom: 5px solid black;
+    }
+    nav.menu li a{
+        color: black;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav.menu ul li a:hover{
+        background-color: red ;
+    }
+}

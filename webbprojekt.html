@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DalaSneakers</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="slide.css">
+<link rel="stylesheet" href="meny.css">
+<link rel="stylesheet" href="kollage.css">
+<link rel="stylesheet" href="card.css">
+<link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+     <header class="header">
+         <div class="vänster"><img src="bilder/logo.png" alt="bild på vår logo"></div>
+         <div class="mitten"> <h1>Dalarnas Sneaker Shop</h1></div>
+         <div class="höger"><a href="activ"><i class="fa fa-shopping-cart"></i></a></div>
+     </header>
+
+
+     <!--Våran meny-->
+     <div class="desktop-meny">
+         <a href="active"><h2>STARTSIDA</h2></a>
+         <a href="active"><h2>KÖP SNEAKERS</h2></a>
+         <a href="active"><h2>VÅRA KOLLEKTIONER</h2></a>
+         <a href="active"><h2>OM OSS</h2></a>
+     </div>
+
+     <div class="mobile-meny">
+       <button>&#9776;</button>
+       <nav class="menu">
+         <ul>
+           <li>
+             <a href="active">Startsida</a>
+           </li>
+           <li>
+             <a href="active">Köp Sneakers</a>
+           </li>
+           <li>
+              <a href="active">våra kollektioner</a>
+            </li>
+          <li>
+                <a href="active">Om oss</a>
+          </li>
+      
+         </ul>
+       </nav>
+     </div>
+
+<script>
+     var slideIndex = 1;
+     showSlides(slideIndex);
+     
+     // Next/previous controls
+     function plusSlides(n) {
+       showSlides(slideIndex += n);
+     }
+     
+     // Thumbnail image controls
+     function currentSlide(n) {
+       showSlides(slideIndex = n);
+     }
+     
+     function showSlides(n) {
+       var i;
+       var slides = document.getElementsByClassName("mySlides");
+       var dots = document.getElementsByClassName("dot");
+       if (n > slides.length) {slideIndex = 1}
+       if (n < 1) {slideIndex = slides.length}
+       for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+       }
+       for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" active", "");
+       }
+       slides[slideIndex-1].style.display = "block";
+       dots[slideIndex-1].className += " active";
+     }
+</script>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="bilder/Sneakers-PNG-Transparent-Picture.png" style="width:100%" alt="bild på skor">
+      <div class="text">Nike - 1199 kr</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="bilder/Sneakers-PNG-Transparent-Picture.png" style="width:100%" alt="bild på skor">
+      <div class="text">vans - 799kr</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="bilder/Sneakers-PNG-Transparent.png" style="width:100%" alt="bild på skor">
+      <div class="text">Vans  - 699 kr</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="bilder/Sneakers-PNG-Picture.png" style="width:100%" alt="bild på skor">
+        <div class="text">Nike - 599 kr</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+<div class="information-container">
+   <div class="information-items">
+     <p>De fyra skorna ovanför är mest sålda produkter. Nedanför ser ni alla våra produkter.</p>
+   </div>
+</div>
+
+<!--Här börjar mina cards-->
+
+<div class="cards">
+        <div class="container">
+            <img src="bilder/sneakers7.jpeg" alt="Avatar" style="width:100%">
+             <h4><b>Fila</b></h4>
+              <p>Sneaker för tjejer</p>
+            </div>
+
+         <div class="container">
+            <img src="bilder/sneakers8.jpeg" alt="Avatar" style="width:100%">
+           <h4><b>Nike </b></h4>
+           <p>Sneaker för Herr</p>
+         </div>
+
+         <div class="container">
+           <img src="bilder/sneakers2.jpeg" alt="Avatar" style="width:100%">
+           <h4><b>Reebook</b></h4>
+           <p>Sneaker för tjejer</p>
+         </div>
+        </div>
+<div class="cards">
+        <div class="container">
+            <img src="bilder/sneakers5.jpeg" alt="Avatar" style="width:100%">
+             <h4><b>Fila</b></h4>
+              <p>Sneaker för tjejer</p>
+            </div>
+
+         <div class="container">
+           <img src="bilder/sneakers6.jpeg" alt="Avatar" style="width:100%">
+           <h4><b>Nike </b></h4>
+           <p>Sneaker för Herr</p>
+         </div>
+         
+         <div class="container">
+            <img src="bilder/sneaker14.jpeg" alt="Avatar" style="width:100%">
+           <h4><b>Reebook</b></h4>
+           <p>Sneaker för tjejer</p>
+         </div>
+        </div>
+<div class="cards">
+        <div class="container">
+            <img src="bilder/sneakers9.jpeg" alt="Avatar" style="width:100%">
+             <h4><b>Fila</b></h4>
+              <p>Sneaker för tjejer</p>
+            </div>
+         <div class="container">
+          <img src="bilder/sneakers11.jpeg" alt="Avatar" style="width:100%">
+           <h4><b>Nike </b></h4>
+           <p>Sneaker för Herr</p>
+         </div>
+         <div class="container">
+            <img src="bilder/sneakers1.jpeg" alt="Avatar" style="width:100%">
+           <h4><b>Reebook</b></h4>
+           <p>Sneaker för tjejer</p>
+         </div>
+        </div>
+
+<footer>
+  <div class="footer-vänster"> 
+    <a class="html" href="https://validator.w3.org/#validate_by_input"><i class="fa fa-html5"></i></a>
+    <a class="css" href="https://jigsaw.w3.org/css-validator/"><i class="fa fa-css3"></i></a>
+  </div>
+  <div class="footer-mitten">
+    <a class="facebook" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+    <a class="instagram" href="https://www.instagram.com/?hl=sv"><i class="fa fa-instagram"></i></a>
+    <a class="twitter" href="https://twitter.com/?lang=sv"><i class="fa fa-twitter"></i></a>
+    
+  </div>
+  <div class="footer-höger">
+      <a class="contact" href="information.html"><i class="fa fa-info-circle"></i></a>
+  </div>
+</footer>
+</body>
+</html>
